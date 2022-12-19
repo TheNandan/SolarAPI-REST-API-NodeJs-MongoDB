@@ -2,6 +2,9 @@
 
 Solar API is a RestFull API built using NodeJS & MongoDB. This is a simple beginer-friendly project i.e anyone who is trying to understand restfull api concept and begin with this project.
 
+
+![restapi](https://user-images.githubusercontent.com/105147460/208478777-67a9e3d9-5d02-4a63-861d-a2396477146a.png)
+
 # Prerequisites
 
 [ NodeJS ]( https://nodejs.org/en/download/ ) <br>
