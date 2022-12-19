@@ -50,7 +50,27 @@ app.route('/planets')
             res.send(data);
         }
     })
-});
+})
+// Inserting a specific planet using POST Method
+.post((req,res)=>{
+    
+
+    const newPlanet = new Planet({
+    position : req.body.position,
+	name : req.body.planetname,
+	velocity : req.body.velocity,
+	distance : req.body.distance,
+	description : req.body.description
+    })
+
+    newPlanet.save((err)=>{
+        if(!err){
+            res.send('Inserted Planet Successfully');
+        }else{
+            res.send(err);
+        }
+    });
+})
 
 
 
