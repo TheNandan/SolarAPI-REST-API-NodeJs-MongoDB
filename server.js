@@ -114,6 +114,25 @@ app.route('/planets/:planetname')
             }
         });
 })
+// fetching a specific data and updating single field without effecting other fields using PATCH Method
+.patch((req,res)=>{
+    Planet.findOneAndUpdate(
+        {name:req.params.planetname},
+        {$set : {
+            position : req.body.position,
+	        name : req.body.planetname,
+	        velocity : req.body.velocity,
+	        distance : req.body.distance,
+	        description : req.body.description 
+        }},
+        (err)=>{
+            if(!err){
+                res.send("Specific Data updated successfully");
+            }else{
+                res.send(err);
+            }
+        })
+})
 
 
 
