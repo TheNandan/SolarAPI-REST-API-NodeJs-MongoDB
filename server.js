@@ -133,6 +133,16 @@ app.route('/planets/:planetname')
             }
         })
 })
+// Delete Specific data using DELETE Method
+.delete((req,res)=>{
+    Planet.deleteOne({name:req.params.planetname},(err)=>{
+        if(!err){
+            res.send("Data deleted Successfully");
+        }else{
+            res.send(err);
+        }
+    })
+});
 
 
 
