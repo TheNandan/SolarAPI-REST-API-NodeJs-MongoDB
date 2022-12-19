@@ -14,7 +14,7 @@ Solar API is a RestFull API built using NodeJS & MongoDB. This is a simple begin
 
 ```
 cd Desktop
-git clone https://github.com/TheNandan/RestFull-API-NodeJS-MongoDB.git
+git clone https://github.com/TheNandan/SolarAPI-REST-API-NodeJs-MongoDB.git
 cd RestFull-API-NodeJS-MongoDB
 npm install
 ```
