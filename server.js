@@ -94,6 +94,26 @@ app.route('/planets/:planetname')
         }
     })
 })
+// fetching specific data and updating entire field using PUT Method
+.put((req,res)=>{
+    Planet.findOneAndUpdate(
+        {name:req.params.planetname},
+        {
+            position : req.body.position,
+	        name : req.body.planetname,
+	        velocity : req.body.velocity,
+	        distance : req.body.distance,
+	        description : req.body.description 
+        },
+        {overwrite:true},
+        (err)=>{
+            if(!err){
+                res.send(err);
+            }else{
+                res.send('Entire Data updated Successfull');
+            }
+        });
+})
 
 
 
