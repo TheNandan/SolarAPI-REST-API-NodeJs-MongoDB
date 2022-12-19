@@ -1,0 +1,36 @@
+{
+  "name": "solarapi",
+  "version": "1.0.0",
+  "description": "RestFull API using NodeJS and MongoDb",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheNandan/SolarAPI-REST-API-NodeJs-MongoDB.git"
+  },
+  "keywords": [
+    "RestFull",
+    "API",
+    "RESTAPI",
+    "NodeJS",
+    "MongoDB"
+  ],
+  "author": "Nandan S",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheNandan/SolarAPI-REST-API-NodeJs-MongoDB/issues"
+  },
+  "homepage": "https://github.com/TheNandan/SolarAPI-REST-API-NodeJs-MongoDB#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.0",
+    "morgan": "^1.10.0"
+  }
+}
