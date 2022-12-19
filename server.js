@@ -71,6 +71,16 @@ app.route('/planets')
         }
     });
 })
+// Deleting all Planets from SolarDb using DELETE Method
+.delete((req,res)=>{
+    Planet.deleteMany((err)=>{
+        if(!err){
+            res.send('Deleted All Planets Successfully')
+        }else{
+            res.send(err);
+        }
+    });
+});
 
 
 
