@@ -82,7 +82,18 @@ app.route('/planets')
     });
 });
 
-
+app.route('/planets/:planetname')
+// Fetching a Specific Planet from SolarDB using GET Method
+.get((req,res)=>{
+    Planet.findOne({name : req.params.planetname},(err,data)=>{
+        if(data)
+        {
+            res.send(data);
+        }else{
+            res.send('No Planet was found in this name');
+        }
+    })
+})
 
 
 
