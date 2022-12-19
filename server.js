@@ -40,6 +40,18 @@ app.get("/",(req,res)=>{
     res.render('index');
 });
 
+app.route('/planets')
+// Fetching all planets using GET Method
+.get((req,res)=>{
+    Planet.find((err,data)=>{
+        if(err){
+            res.send(err)
+        }else{
+            res.send(data);
+        }
+    })
+});
+
 
 
 
