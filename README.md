@@ -45,10 +45,10 @@ use the PlanetsDB.json data in the Database using studi3T.
 
 ```
 {
-    'position':'10'
+    'position':10
     'name':'Pluto'
-    'velocity':'25'
-    'distance':'250'
+    'velocity':25
+    'distance':250
     'description':'Pluto is a dwarf planet in the Kuiper belt, a ring of bodies beyond the orbit of Neptune'
 }
 ```
